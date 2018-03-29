@@ -12,10 +12,10 @@ Calculating Levenshtein distance between two strings
 - Graph class – creating map for each word in dictionary with the neighbors, where the edit distance between the word and neighbor is 1.  - Cost calculation – Depth first search over the map with the source and target.  
 
 ***Runtime:***
-Let’s calculate the runtime for this algorithm here. 
-⋅⋅* Travel method finds neighbors for each word in dictionary – O(n^2) [n = len(Dictionary)] 
-⋅⋅* Levenshtein method considers 2 strings out of dictionary to min distance – O(mn) [m = len(word1), n = len(word2) ]
-⋅⋅* Graph – Hashmap entry with the String and its neighbors – O(1)
-⋅⋅* Cost Calculation – DFS over the graph – O(n+m) [n = no of nodes/words, m = no of neighbors for each node] , since we are using visited set
+    Let’s calculate the runtime for this algorithm here. 
+       - Travel method finds neighbors for each word in dictionary – O(n^2) [n = len(Dictionary)]  
+       - Levenshtein method considers 2 strings out of dictionary to min distance – O(mn) [m = len(word1), n = len(word2) ]  
+       - Graph – Hashmap entry with the String and its neighbors – O(1)  
+       - Cost Calculation – DFS over the graph – O(n+m) [n = no of nodes/words, m = no of neighbors for each node] , since we are using visited set
 
 ***Total Runtime – (n^2)(mn) + (n+m)***
