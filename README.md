@@ -6,10 +6,10 @@ Calculating Levenshtein distance between two strings
 ***Solution:*** As per my understanding of the question, approached problem considering a word list where both source and target word will be present and computing one edit transformation with the given source word to nearest word in the dictionary following other transformations to reach the target. 
 
 ***Approach followed:***
-⋅⋅* Reading input through scanner – Operation Cost, Source string, Target String, Dictionary is hard coded in the code [can be changed to get the input as file] 
-⋅⋅* Travel method – Finding neighbors for each word in dictionary with edit distance 1 / Anagram neighbors [Implemented my isAnagram method]. 
-⋅⋅* Levenshtein Method – Designed using dynamic programming concept, which will find edit considering 1 letter at a time.  
-⋅⋅* Graph class – creating map for each word in dictionary with the neighbors, where the edit distance between the word and neighbor is 1.  ⋅⋅* Cost calculation – Depth first search over the map with the source and target.  
+- Reading input through scanner – Operation Cost, Source string, Target String, Dictionary is hard coded in the code [can be changed to get the input as file]  
+- Travel method – Finding neighbors for each word in dictionary with edit distance 1 / Anagram neighbors [Implemented my isAnagram method].  
+- Levenshtein Method – Designed using dynamic programming concept, which will find edit considering 1 letter at a time.  
+- Graph class – creating map for each word in dictionary with the neighbors, where the edit distance between the word and neighbor is 1.  - Cost calculation – Depth first search over the map with the source and target.  
 
 ***Runtime:***
 Let’s calculate the runtime for this algorithm here. 
